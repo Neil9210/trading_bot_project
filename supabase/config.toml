@@ -1,0 +1,7 @@
+project_id = "dxwmyyitnuzgjcoahycs"
+
+[functions.stock-data]
+verify_jwt = false
+
+[functions.ai-signal]
+verify_jwt = true
