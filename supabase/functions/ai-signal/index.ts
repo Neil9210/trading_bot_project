@@ -1,6 +1,6 @@
 import { corsHeaders } from "https://esm.sh/@supabase/supabase-js@2.95.0/cors";
 
-// AI buy/sell signal using trading companion AI Gateway with tool-calling for structured output.
+// AI buy/sell signal using Trading Bot AI Gateway with tool-calling for structured output.
 // Body: { symbol, candles: [{t,o,h,l,c,v}], price }
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
@@ -12,8 +12,8 @@ Deno.serve(async (req) => {
         status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
-    const trading companion_API_KEY = Deno.env.get("trading companion_API_KEY");
-    if (!trading companion_API_KEY) throw new Error("trading companion_API_KEY not configured");
+    const TRADING_BOT_API_KEY = Deno.env.get("TRADING_BOT_API_KEY");
+    if (!TRADING_BOT_API_KEY) throw new Error("TRADING_BOT_API_KEY not configured");
 
     // Compress candles to last 60 closes for the prompt
     const closes = candles.slice(-60).map((c: any) => Number(c.c).toFixed(2));
@@ -33,9 +33,9 @@ Last 60 closes: ${closes.join(", ")}
 
 Analyze short-term momentum, trend, and volatility. Give a paper-trading signal.`;
 
-    const aiRes = await fetch("https://ai.gateway.trading companion.dev/v1/chat/completions", {
+    const aiRes = await fetch("https://ai.gateway.trading-bot.dev/v1/chat/completions", {
       method: "POST",
-      headers: { Authorization: `Bearer ${trading companion_API_KEY}`, "Content-Type": "application/json" },
+      headers: { Authorization: `Bearer ${TRADING_BOT_API_KEY}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         model: "google/gemini-3-flash-preview",
         messages: [
