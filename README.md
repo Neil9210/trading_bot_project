@@ -1,34 +1,44 @@
-# 🚀 Smart Trade Companion
+# 🚀 Smart Trade Companion  
 
-A modern **Trading Dashboard Web App** built with **React, Vite, TypeScript, and Tailwind CSS**.  
-It provides interactive stock visualizations and a clean UI for trading insights.
+<p align="center">
+  <b>A Modern Trading Dashboard built with React + Vite + TypeScript</b><br/>
+  Visualize stocks, analyze trends, and explore trading insights in a clean UI.
+</p>
 
 ---
 
-## 📌 Features
+## 🧠 Overview
 
-- 📊 Interactive stock charts
-- ⚡ Fast performance with Vite
-- 🎨 Modern UI (Tailwind + shadcn)
-- 📱 Responsive design
-- 🧩 Modular code structure
-- 🌙 Theme support
-- 🔐 Supabase integration (optional)
+Smart Trade Companion is a fast, responsive, and modern trading dashboard designed to simulate real-world stock analysis interfaces.  
+Built with performance and scalability in mind using the latest frontend technologies.
+
+---
+
+## ✨ Features
+
+- 📊 Interactive stock charts (Recharts)
+- ⚡ Lightning-fast performance with Vite
+- 🎨 Clean UI using Tailwind + shadcn
+- 📱 Fully responsive layout
+- 🌙 Dark/Light theme support
+- 🔐 Backend-ready (Supabase integration)
+- 🧩 Scalable and modular architecture
 
 ---
 
 ## 🛠️ Tech Stack
 
-- React 18 + TypeScript  
-- Vite  
-- Tailwind CSS  
-- shadcn/ui + Radix UI  
-- React Query  
-- Recharts  
-- Supabase (optional)  
-- React Hook Form + Zod  
+| Category        | Technology |
+|----------------|-----------|
+| Frontend       | React 18, TypeScript |
+| Build Tool     | Vite |
+| UI Components  | shadcn/ui, Radix UI |
+| Styling        | Tailwind CSS |
+| Charts         | Recharts |
+| State/Data     | React Query |
+| Forms          | React Hook Form + Zod |
+| Backend (Opt.) | Supabase |
 
----
 
 ## 📂 Project Structure
 smart-trade-companion/ ├── public/ ├── src/ │   ├── components/ │   ├── pages/ │   ├── hooks/ │   ├── lib/ │   ├── App.tsx │   └── main.tsx ├── index.html ├── package.json ├── vite.config.ts ├── tailwind.config.ts └── tsconfig.json
