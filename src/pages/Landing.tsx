@@ -54,7 +54,7 @@ const Landing = () => {
         {/* Feature grid */}
         <div id="features" className="mt-24 grid gap-6 md:grid-cols-3">
           {[
-            { icon: Brain, title: "AI signals", desc: "Each chart gets a buy/sell/hold recommendation with confidence and rationale, powered by  AI." },
+            { icon: Brain, title: "AI signals", desc: "Each chart gets a buy/sell/hold recommendation with confidence and rationale, powered by Lovable AI." },
             { icon: Bot, title: "Auto-trading bot", desc: "Toggle a strategy bot per symbol. SMA crossover or AI-driven, running on live quotes." },
             { icon: Wallet, title: "Simulated wallet", desc: "Start with $10,000 paper cash. Buy and sell at live market prices and watch your P&L." },
             { icon: LineChart, title: "Live charts", desc: "Real market data from Yahoo Finance with multiple timeframes." },
