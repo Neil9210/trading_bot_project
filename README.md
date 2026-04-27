@@ -1,3 +1,3 @@
-# Welcome to your trading companion project
+# Welcome to your Trading Bot project
 
 TODO: Document your project here
